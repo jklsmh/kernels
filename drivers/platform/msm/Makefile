@@ -25,8 +25,11 @@ obj-$(CONFIG_QPNP_VIBRATOR) += qpnp-vibrator.o
 obj-$(CONFIG_MSM_AVTIMER) += avtimer.o
 obj-$(CONFIG_MSM_11AD) += msm_11ad/
 obj-$(CONFIG_MSM_MHI_DEV) += mhi_dev/
+<<<<<<< HEAD
 obj-$(CONFIG_SSM) += ssm.o
 
 #TODO: remove me b/62058353
 subdir-ccflags-y += \
 	-Wno-enum-conversion
+=======
+>>>>>>> f9927672756c1fdf5be9d2ca005339bf0ac8b4c8
