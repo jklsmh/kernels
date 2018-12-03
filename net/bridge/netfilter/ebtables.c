@@ -2102,17 +2102,12 @@ static int size_entry_mwt(struct ebt_entry *entry, const unsigned char *base,
 	 * offsets are relative to beginning of struct ebt_entry (i.e., 0).
 	 */
 	for (i = 0; i < 4 ; ++i) {
-<<<<<<< HEAD
-		if (offsets[i] >= *total)
-			return -EINVAL;
-=======
 		if (offsets[i] > *total)
 			return -EINVAL;
 
 		if (i < 3 && offsets[i] == *total)
 			return -EINVAL;
 
->>>>>>> f9927672756c1fdf5be9d2ca005339bf0ac8b4c8
 		if (i == 0)
 			continue;
 		if (offsets[i-1] > offsets[i])
