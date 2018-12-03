@@ -2320,15 +2320,9 @@ static int _qce_sps_add_sg_data(struct qce_device *pce_dev,
 						sps_bam_pipe->iovec_count;
 
 	while (nbytes > 0) {
-<<<<<<< HEAD
-		if (sg_src == NULL) {
-			pr_err("qce50: _qce_sps_add_sg_data, sg = NULL\n");
-			break;
-=======
 		if (NULL == sg_src) {
 			pr_err("qce50.c: _qce_sps_add_sg_data, sg_src = NULL");
 			return -ENOENT;
->>>>>>> f9927672756c1fdf5be9d2ca005339bf0ac8b4c8
 		}
 		len = min(nbytes, sg_dma_len(sg_src));
 		nbytes -= len;
