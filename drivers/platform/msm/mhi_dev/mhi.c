@@ -1417,11 +1417,7 @@ static void mhi_dev_transfer_completion_cb(void *mreq)
 	ch = client->channel;
 	mhi = ch->ring->mhi_dev;
 	el = req->el;
-<<<<<<< HEAD
-	transfer_len = req->len;
-=======
 	transfer_len = req->transfer_len;
->>>>>>> f9927672756c1fdf5be9d2ca005339bf0ac8b4c8
 	snd_cmpl = req->snd_cmpl;
 	rd_offset = req->rd_offset;
 	ch->curr_ereq->context = ch;
